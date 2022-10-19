@@ -1,0 +1,23 @@
+div{
+    margin: 10px 150px 10px 150px;
+    border: 5px dashed rgb(0, 35, 190);
+    padding-bottom: 30px;
+    background-color: rgba(183, 176, 247, 0.61);
+}
+#id{
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(175, 23, 112);
+    margin-left: 200px;
+}
+#cuerpo{
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(175, 23, 112);
+    margin: 20px 200px 0px 200px;
+}
+h1{
+    text-align: center;
+    color: indigo;
+    text-decoration:underline;
+}
