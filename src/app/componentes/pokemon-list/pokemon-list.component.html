@@ -1,1 +1,27 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
 <p>pokemon-list works!</p>
+
+
+<div class="cards">
+    <div *ngFor="let pokemon of pokemonsData" class="card">
+        <img [src]="pokemon.sprites.front_default" alt="">
+        <div class="contenido">
+            <h1>Id: {{pokemon.id}}</h1>
+            <h1>Nombre: {{pokemon.name}}</h1>
+            <h1>Altura: {{pokemon.height}}</h1>
+            <h1>Peso: {{pokemon.weight}}</h1>
+            <h1 class="habilidades" style="color: rgb(214, 121, 0);">Habilidades:</h1>
+            <div *ngFor="let habilidad of pokemon.abilities" class="abilities">
+                <h1>{{habilidad.ability.name}}</h1>
+            </div>
+            <h1 style="color: rgb(0, 98, 110);">Items retenidos:</h1>
+            <div *ngFor="let items of pokemon.held_items" class="items">
+                <h1>{{items.item.name}}</h1>
+            </div><br>
+        </div><br>
+
+    </div>
+</div>
